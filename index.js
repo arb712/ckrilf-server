@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 // Routing Setup
 app.use("/feed", feedRoutes);
 // Check server if it's running well
