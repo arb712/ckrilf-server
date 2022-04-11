@@ -8,7 +8,9 @@ export const getFeed = async (req, res) => {
   try {
     // Fetch data from API
     await axios
-      .get(`${URL}/services/feeds/photos_public.gne?${FORMAT_FEED}`)
+      .get(
+        `${URL}/services/feeds/photos_public.gne?${FORMAT_FEED}&nojsoncallback=1`
+      )
       .then((response) => {
         res.send(response.data);
       })
