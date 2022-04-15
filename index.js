@@ -6,10 +6,9 @@ import dotenv from "dotenv";
 import feedRoutes from "./routes/publicFeed.js";
 // Config Setup
 const app = express();
+dotenv.config();
 // Cors Middleware for cross-origin
 app.use(cors());
-app.use(express.json());
-dotenv.config();
 const PORT = process.env.PORT || 5000;
 // Routing Setup
 app.use("/feed", feedRoutes);
