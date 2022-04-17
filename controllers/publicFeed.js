@@ -1,7 +1,7 @@
 // Axios module to fetch Flickr API
 import axios from "axios";
 // API Constants
-import { URL, FORMAT_FEED, KEY, SEARCH } from "../constants/constants.js";
+import { URL, FORMAT_FEED } from "../constants/constants.js";
 
 // Flickr API
 export const getFeed = async (req, res) => {
